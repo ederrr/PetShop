@@ -177,10 +177,13 @@ article{
 }
 
 article div p{
-	text-transform: bold;
 	color: gray;
 	margin: auto;
 
+}
+
+article div p.product{
+	font-weight: bolder;
 }
 
 div.polaroid {
@@ -200,4 +203,8 @@ div.polaroid img{
 div.container {
 	padding: 10px;
 	display: inline;
+}
+
+div.polaroid:hover{
+	background-color: lightgray;
 }
