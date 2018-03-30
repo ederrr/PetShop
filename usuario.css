@@ -35,11 +35,10 @@ header, nav {
 
 .login-area a:hover{
 	color: green;
-}
 
+}
 .navbar a:hover{
 	background-color: forestgreen;
-
 }
 
 section {
@@ -63,8 +62,30 @@ article div p{
 
 }
 
-div.polaroid {
-	width: 20%;
+article div p.product{
+	font-weight: bolder;
+}
+
+.info{
+	vertical-align: top;
+	border-style: solid;
+	border-width: 0.8px;
+	border-color: lightgray;
+	margin: 10px;
+	padding: 10px;
+	margin-right: 25px;
+	border-radius: 15px ;
+	min-height: 200px;
+	margin-bottom: 20px;
+}
+
+h2{
+	margin-top: 0;
+	margin-left: 20px;
+}
+
+div.pet {
+	width: 12%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	text-align: center;
 	display: inline-block;
@@ -73,7 +94,7 @@ div.polaroid {
 	border-radius: 15px 0 15px 0;
 }
 
-div.polaroid img{
+div.pet img{
 	width: 100%;
 }
 
@@ -82,6 +103,17 @@ div.container {
 	display: inline;
 }
 
-div.polaroid:hover{
+div.pet:hover{
 	background-color: lightgray;
+}
+
+.fa-edit, .fa-trash{
+	margin: 0 15px 0 15px;
+}
+
+.fa-edit{
+	color: blue;
+}
+.fa-trash{
+	color: tomato;
 }

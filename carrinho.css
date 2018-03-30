@@ -37,10 +37,10 @@ header, nav {
 	color: green;
 }
 
-.navbar a:hover{
+.navbar a:hover {
 	background-color: forestgreen;
-
 }
+
 
 section {
 	width: 80%;
@@ -55,33 +55,73 @@ section {
 
 article{
 	padding-left: 20px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 15px;
+	border-style: solid;
+	border-width: 0.8px;
+	border-color: lightgray;
+	height: 100px;
 }
 
 article div p{
 	color: gray;
 	margin: auto;
-
 }
 
-div.polaroid {
+h2{
+	margin-left: 25px;
+}
+
+.imagem {
 	width: 20%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	text-align: center;
-	display: inline-block;
-	margin: 10px;
+	display: inline-block;	
+}
+
+.imagem img{
+	height: 98px;
+}
+
+.descricao{
 	padding: 10px;
-	border-radius: 15px 0 15px 0;
+	display: inline-grid;
+	text-align: center;
+
+
 }
 
-div.polaroid img{
-	width: 100%;
-}
-
-div.container {
-	padding: 10px;
-	display: inline;
-}
-
-div.polaroid:hover{
+article:hover{
 	background-color: lightgray;
+
+}
+
+.produto, .quantidade, .excluir {
+	width: 25%;
+	display: inline-grid;
+	vertical-align: top;
+	text-align: justify;
+	margin-left: 5px;
+	font-weight: bolder;
+}
+
+.bt-comprar{
+	vertical-align: top;
+	color: white;
+	font-weight: bolder;
+	background-color: forestgreen;
+	width: 200px;
+	height: 50px;
+	display: block;
+	margin:auto;
+}
+
+.fa-trash{
+	margin-top: 40px;
+	color: tomato;
+
+}
+
+input{
+	width: 30px;
 }

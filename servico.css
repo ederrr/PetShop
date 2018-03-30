@@ -38,7 +38,7 @@ header, nav {
 }
 
 .navbar a:hover {
-	background-color: green;
+	background-color: forestgreen;
 }
 
 
@@ -60,7 +60,7 @@ article{
 	border-radius: 15px;
 	border-style: solid;
 	border-width: 0.8px;
-	border-color: gray;
+	border-color: lightgray;
 	height: 200px;
 }
 
