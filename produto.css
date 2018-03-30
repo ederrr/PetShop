@@ -1,0 +1,228 @@
+header, nav {
+	width: 80%;
+	margin: auto;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 5px;
+}
+
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.login-area{
+	font-size: 18pt;
+	padding-right: 50px;
+	padding-top: 50px;
+	position: relative;
+	float: right;
+	
+}
+
+.login-area a{
+	font-size: 18px;
+	color: black;
+}
+
+.login-area a:hover{
+	color: green;
+}
+
+.dropdown {
+    
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: green;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+section {
+	width: 80%;
+	margin: auto;
+	margin-top:10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 8px;
+	padding: 20px auto 20px auto;
+}
+
+article{
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.exibicao{
+	padding: 0;
+	
+}
+
+.produto, .info, .descricao{
+	vertical-align: top;
+	border-style: solid;
+	border-width: 0.8px;
+	border-color: lightgray;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 15px ;
+}
+
+.produto{
+	display: inline-grid;
+	width: 45%;
+	text-align: center;
+	min-height: 560px;
+}
+
+.descricao{
+	margin: auto 25px 7px auto;
+}
+.info{
+	margin: auto 25px 30px auto;
+}
+
+
+article p{
+	color: gray;
+	margin: auto;
+	font-weight: normal;
+	font-size: 12pt;
+}
+
+label{
+	font-size: 12pt;
+	margin: 3px;
+
+}
+
+.img-produto{
+	width: 100%;
+}
+
+.imgs-sm{
+	width: 100%;
+	margin: 5px;
+	padding: auto;
+}
+
+.img-sm{
+	margin: auto;
+	width: 15%;
+
+}
+
+h1{
+
+	font-size: 25pt;
+	margin: 40px auto 70px auto;
+}
+
+.produto p{
+
+	margin: 0;
+}
+
+#foto{
+	border-style: none;
+}
+
+.valor-antigo{
+	text-decoration: line-through;
+	
+
+}
+
+.valor-atual{
+	font-weight: bolder;
+	color: dimgray;
+}
+
+#frete{
+	display: block;
+}
+
+
+#bt-comprar{
+	background-color: forestgreen;
+	color: white;
+	font-weight: bolder;
+	width: 40%;
+	height: 50px;
+	margin: auto;
+}
+
+#ipt-frete{
+	margin-bottom: 10px;
+
+}
+
+.descricao p{
+	font-weight: normal;
+	color:black;
+	font-size: 14pt;
+	text-align: justify;
+}
+
+table{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+td{
+	font-size: 14pt;
+	color: black;
+	font-weight: normal;
+	padding: 5px;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
