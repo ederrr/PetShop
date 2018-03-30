@@ -35,10 +35,11 @@ header, nav {
 
 .login-area a:hover{
 	color: green;
-
 }
+
 .navbar a:hover{
 	background-color: green;
+
 }
 
 section {
@@ -49,81 +50,6 @@ section {
 	padding: auto;
 	padding-bottom: 10px;
 	border-radius: 8px;
-
-}
-
-.slider {
-	display: block;
-	height: 260px;
-	width: 960px;
-	margin: auto;
-	margin-top: 10px;
-	padding-top: 10px;
-	margin: 0px;
-}
-
- .slider li {
-	list-style: none;
-	position: absolute;
- }
-
- .slider img {
-	margin: 0;
-	height: 100%;
-	width: 100%;
-	border-radius: 5px;
- } 
-
-.slider input {
-	display: none;
-}
-
-.slider label {
-	background-color: white;
-	bottom: 10px;
-	cursor: pointer;
-	display: block;
-	height: 10px;
-	position: absolute;
-	width: 10px;
-	z-index: 10;
-}
-
-.slider li:nth-child(1) label {
-	left: 10px;
-}
-
-.slider li:nth-child(2) label {
-	left: 40px;
-}
-
-.slider li:nth-child(3) label {
-	left: 70px;
-} 
-.slider li:nth-child(1) label:hover{
-	background-color: green;
-}
-.slider li:nth-child(2) label:hover{
-	background-color: green;
-}
-.slider li:nth-child(3) label:hover{
-	background-color: green;
-}
-
-
-.slider img {
-	opacity: 0;
-	visibility: hidden;
-}
-.slider li input:checked ~ img {
-	opacity: 1;
-	visibility: visible;
-}
-.slider li input:hover{
-	background-color: black;
-}
-
-section{
 	padding-top: 20px;
 }
 
@@ -135,10 +61,6 @@ article div p{
 	color: gray;
 	margin: auto;
 
-}
-
-article div p.product{
-	font-weight: bolder;
 }
 
 div.polaroid {
