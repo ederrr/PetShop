@@ -1,0 +1,178 @@
+header, nav {
+	width: 80%;
+	margin: auto;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 5px;
+}
+
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.login-area{
+	font-size: 18pt;
+	padding-right: 50px;
+	padding-top: 50px;
+	position: relative;
+	float: right;
+	
+}
+
+.login-area a{
+	font-size: 18px;
+	color: black;
+}
+
+.login-area a:hover{
+	color: green;
+}
+
+.navbar a:hover {
+	background-color: forestgreen;
+}
+
+
+section {
+	width: 80%;
+	margin: auto;
+	margin-top:10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: auto;
+	padding-bottom: 10px;
+	border-radius: 8px;
+	padding-top: 20px;
+}
+
+article{
+	padding-left: 20px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 15px;
+	border-style: solid;
+	border-width: 0.8px;
+	border-color: lightgray;
+	min-height: 200px;
+
+}
+
+article div p{
+	color: gray;
+	margin: auto;
+}
+
+h2{
+	text-align: left;
+	margin-left: 20px;
+}
+
+article h2{
+	text-align: center;
+	margin: 0;
+}
+
+.imagem {
+	width: 20%;
+	text-align: center;
+	display: inline-block;
+	
+}
+
+.imagem img{
+	height: 150px;
+}
+
+.descricao {
+	padding: 10px;
+	display: inline;
+	text-align: center;
+
+}
+
+.resumo{
+	width: 50%;
+	display: inline-grid;
+	vertical-align: top;
+	text-align: justify;
+	margin-left: 10px;
+}
+
+.bt-agendar{
+	vertical-align: top;
+	margin:auto;
+	margin-top: 55px;
+	margin-bottom: 20px;
+	color: white;
+	font-weight: bolder;
+	background-color: forestgreen;
+	width: 100px;
+	height: 50px;
+}
+
+div.pet {
+	width: 25%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	display: inline-block;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 15px 0 15px 0;
+}
+
+.lista-pets, .data{
+	border-radius: 15px;
+	border-style: solid;
+	border-width: 0.8px;
+	border-color: lightgray;
+}
+
+.lista-pets{
+	width: 45%;
+	display: inline-block;
+	border-style: solid;
+	margin-left: 20px;
+}
+
+.titulo{
+	text-align: center;
+	font-weight: bolder;
+}
+
+.data{
+	display: inline-block;
+	border-style: solid;
+	vertical-align: top;
+	width: 50%;
+	margin:auto;
+	text-align: center;
+}
+
+div.pet img{
+	width: 100%;
+}
+
+div.container {
+	padding: 10px;
+	display: inline;
+}
+
+div.pet:hover{
+	background-color: lightgray;
+}
+
+.nome{
+	margin: 0px;
+}
+label{
+	display: block;
+	margin-top: 30px;
+}

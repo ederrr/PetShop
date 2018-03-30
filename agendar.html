@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PetShop</title>
+	<script type="text/javascript" src="agendar.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="agendar.css">
+</head>
+<body>
+<header>
+	<div>
+		<span id="logo">
+			<img src="img/logo.png">
+		</span>
+		<span class="login-area">
+			<a href="usuario.html"><span class="fa fa-user"></span>Usuário</a> / 
+				<a href="#logout">Sair</a>
+				<div>
+					<a href="carrinho.html"><span class="fa fa-shopping-cart"></span>Carrinho</a>
+					<a href="#agendar"><span class="fa fa-calendar"></span></a>
+				</div>	
+		</span>
+	</div>
+</header>
+
+<nav class="navbar">
+		<a href="index.html">Início</a>
+		<a href="servico.html">Serviços</a>
+		<a href="especie.html">Cachorros</a>
+		<a href="especie.html">Gatos</a>
+		<a href="especie.html">Cavalos</a>
+		<a href="especie.html">Roedores</a>
+		<a href="especie.html">Pássaros</a>
+		<a href="especie.html">Peixes</a>
+		<a href="especie.html">Animais Exóticos</a>
+	
+</nav>
+<section>
+	<h2>Agendar Serviço</h2>
+	<article>
+		<h2>Banho</h2>
+		<span class="imagem">
+			<img src="fotos/banho.png" >
+			<div class="descricao">
+				
+			</div>
+		</span>
+		<span class="resumo">
+			<p >Banho com shampoo neutro específico para animais para realizar a limpeza mais delicada (segundo enxágue). Com o ar aquecido, o acabamento do banho é realizado com a secagem e escovação dos pelos ao mesmo tempo. Este processo é realizado até a retirada total da umidade.</p>
+			<p class="valor"> * Valor especificado dependendo da espécie e raça do animal.</p>
+		</span>
+
+		<span class="lista-pets">
+			<p class="titulo">Escolha seu pet:</p>
+			<div class="pet">
+				<img src="fotos/dog.jpg" >
+				<div class="container">
+					<p class="nome">Pet 1</p>
+				</div>
+			</div>
+			<div class="pet">
+				<img src="fotos/dog.jpg" >
+				<div class="container">
+					<p class="nome">Pet 2</p>
+				</div>
+			</div>
+			<div class="pet">
+				<img src="fotos/dog.jpg" >
+				<div class="container">
+					<p class="nome">Pet 3</p>
+				</div>
+			</div>
+			<div class="pet">
+				<img src="fotos/dog.jpg" >
+				<div class="container">
+					<p class="nome">Pet 4</p>
+				</div>
+			</div>
+
+		</span>
+		<span class="data">
+			<p class="titulo">Escolha uma Data:</p>
+			<input type="date" name="calendario">
+			<input type="time" name="hora">
+			<label> Valor do Serviço: <p>R$3,50</p></label>
+			<button class="bt-agendar" onclick="comprar()">Agendar</button>
+		</span>
+		
+	</article>
+	
+</section>
+
+</body>
+</html>
