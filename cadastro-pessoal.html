@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PetShop</title>
+	<script type="text/javascript" src="index.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="cadastro-pessoal.css">
+</head>
+<body>
+<header>
+	<div>
+		<span id="logo">
+			<img src="img/logo.png">
+		</span>
+		<span class="login-area">
+			<a href="usuario.html"><span class="fa fa-user"></span>Usuário</a> /
+				<a href="#logout">Sair</a>
+				<div>
+					<a href="carrinho.html"><span class="fa fa-shopping-cart"></span>Carrinho</a>
+					<a href="#agendar"><span class="fa fa-calendar"></span></a>
+				</div>
+		</span>
+	</div>
+</header>
+
+<nav class="navbar">
+
+		<a href="index.html">Início</a>
+		<a href="servico.html">Serviços</a>
+		<a href="especie.html">Cachorros</a>
+		<a href="especie.html">Gatos</a>
+		<a href="especie.html">Cavalos</a>
+		<a href="especie.html">Roedores</a>
+		<a href="especie.html">Pássaros</a>
+		<a href="especie.html">Peixes</a>
+		<a href="especie.html">Animais Exóticos</a>
+
+</nav>
+<section>
+	<article>
+		<form>
+		<h1>Cadastro Pessoal</h1>
+		<fieldset>
+			<h2>Meus dados</h2>
+			<label>Nome<br></label>
+				<input type="text" name="nomecompleto" placeholder="Nome Completo" value="">
+			<br>
+			<label>E-mail<br></label>
+				<input type="text" name="email" placeholder="email@email.com" value="">
+			<br>
+			<label>Senha<br></label>
+				<input type="password" name="senha" placeholder="" value="">
+			<br>
+			<label>Confirmar Senha<br></label>
+				<input type="password" name="senha" placeholder="" value="">
+			<br>
+			<label>CPF<br></label>
+				<input type="text" name="cpf" placeholder="Somente números" value="">
+			<br>
+			<label>Data de Nascimento<br></label>
+				<input type="text" name="datadenascimento" placeholder="31/12/2000" value="">
+			<br>
+			<label>Sexo<br></label>
+				<select name="cars">
+					<option disabled selected value></option>
+					<option value="feminino">Feminino</option>
+					<option value="masculino">Masculino</option>
+					<option value="outro">Outro</option>
+				</select>
+			<br>
+			<label>Telefone<br></label>
+				<input type="text" name="telefone" placeholder="DDD+Telefone" value="">
+		</fieldset>
+		<fieldset>
+			<h2>Meu endereço</h2>
+			<label>Endereço<br></label>
+				<input type="text" name="telefone" placeholder="Av: Miguel Petroni" value="">
+			<br>
+			<label>Número<br></label>
+				<input type="text" name="telefone" placeholder="200" value="">
+			<br>
+			<label>CEP<br></label>
+				<input type="text" name="telefone" placeholder="14231600" value="">
+			<br>
+			<label>Complemento<br></label>
+				<input type="text" name="telefone" placeholder="Apto 23, bloco 5" value="">
+			<br>
+			<label>Bairro<br></label>
+				<input type="text" name="telefone" placeholder="Vila Nery" value="">
+			<br>
+			<label>Estado<br></label>
+				<input type="text" name="telefone" placeholder="São Paulo" value="">
+			<br>
+			<label>Cidade<br></label>
+				<input type="text" name="telefone" placeholder="São Carlos do Pinhal" value="">
+			<br>
+			<label>Referência<br></label>
+				<textarea name="referencia" placeholder="Perto do posto Ipiranga" value="">
+				</textarea>
+			<input type="submit" value="Cadastrar" id="envio">
+		</fieldset>
+		</form>
+	</article>
+</section>
+
+<footer>
+	<p>Eder Rosati Ribeiro | Leonardo de Almeida Lima Zanguetin | Victor Luiz da Silva Mariano Pereira</p>
+</footer>
+
+</body>
+</html>
