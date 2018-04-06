@@ -78,13 +78,18 @@ article h2 {
 }
 
 fieldset {
-	width: 45%;
+	width: 46%;
 	min-height: 600px;
 	display: inline-grid;
 	border: 0px;
 	background-color: rgb(242, 242, 242);
 	margin-bottom: 10px;
 	vertical-align: top;
+
+}
+
+input, text-area, select{
+	width: 100%;
 }
 
 #envio {
