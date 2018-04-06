@@ -25,7 +25,7 @@ header, nav {
 	padding-top: 50px;
 	position: relative;
 	float: right;
-	
+
 }
 
 .login-area a{
@@ -116,4 +116,10 @@ div.pet:hover{
 }
 .fa-trash{
 	color: tomato;
+}
+
+footer {
+	text-align: center;
+	font-size: 14px;
+	color: grey;
 }

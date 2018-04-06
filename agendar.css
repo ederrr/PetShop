@@ -25,7 +25,7 @@ header, nav {
 	padding-top: 50px;
 	position: relative;
 	float: right;
-	
+
 }
 
 .login-area a{
@@ -84,7 +84,7 @@ article h2{
 	width: 20%;
 	text-align: center;
 	display: inline-block;
-	
+
 }
 
 .imagem img{
@@ -175,4 +175,10 @@ div.pet:hover{
 label{
 	display: block;
 	margin-top: 30px;
+}
+
+footer {
+	text-align: center;
+	font-size: 14px;
+	color: grey;
 }

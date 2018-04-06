@@ -25,7 +25,7 @@ header, nav {
 	padding-top: 50px;
 	position: relative;
 	float: right;
-	
+
 }
 
 .login-area a{
@@ -62,4 +62,10 @@ article div p{
 	color: gray;
 	margin: auto;
 
+}
+
+footer {
+	text-align: center;
+	font-size: 14px;
+	color: grey;
 }
