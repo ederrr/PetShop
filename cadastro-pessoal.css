@@ -55,11 +55,14 @@ section {
 
 article {
 	padding-left: 20px;
+	padding-top: 0px;
+
 }
 
 article div p {
 	color: gray;
-	margin: auto;
+	margin: auto; 
+
 }
 
 article div p.product {
@@ -81,6 +84,7 @@ fieldset {
 	border: 0px;
 	background-color: rgb(242, 242, 242);
 	margin-bottom: 10px;
+	vertical-align: top;
 }
 
 #envio {

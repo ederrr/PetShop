@@ -55,12 +55,21 @@ section {
 
 article{
 	padding-left: 20px;
+	padding-top: 0px;
 }
 
 article div p{
 	color: gray;
 	margin: auto;
 
+}
+
+article h1 {
+	font-size: 18pt;
+}
+
+article h2 {
+	font-size: 16pt;
 }
 
 div.polaroid {
