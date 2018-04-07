@@ -9,3 +9,7 @@ function novoPet(){
 function perfilPet() {
 	window.location.href = "animal.html";
 }
+
+function editUsuario() {
+	window.location.href = "cadastro-pessoal.html";
+}

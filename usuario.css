@@ -84,6 +84,33 @@ h2{
 	margin-left: 20px;
 }
 
+.foto{
+	width: 20%;
+	margin: auto;
+	display: inline-grid;
+
+}
+.foto img{
+	width: 100%;
+}
+
+.descricao, .endereco{
+	width: 30%;
+	margin-top: 40px;
+	margin-left: 20px;
+	display: inline-grid;
+	vertical-align: top;
+}
+
+label{
+	font-weight: bold;
+	font-size: 12pt;
+}
+label p{
+	display: inline-grid;
+
+}
+
 div.pet {
 	width: 12%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -122,4 +149,8 @@ footer {
 	text-align: center;
 	font-size: 14px;
 	color: grey;
+}
+
+.info .fa-edit{
+	float: right;
 }
