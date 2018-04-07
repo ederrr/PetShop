@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PetShop</title>
+	<script type="text/javascript" src="index.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="cadastro-produto.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+</head>
+<body>
+<header>
+	<div>
+		<span id="logo">
+			<img src="img/logo.png">
+		</span>
+		<span class="login-area">
+			<a href="usuario.html"><span class="fa fa-user"></span>Usuário</a> /
+				<a href="#logout">Sair</a>
+				<div>
+					<a href="carrinho.html"><span class="fa fa-shopping-cart"></span>Carrinho</a>
+					<a href="#agendar"><span class="fa fa-calendar"></span></a>
+				</div>
+		</span>
+	</div>
+</header>
+
+<nav class="navbar">
+
+		<a href="index.html">Início</a>
+		<a href="servico.html">Serviços</a>
+		<a href="especie.html">Cachorros</a>
+		<a href="especie.html">Gatos</a>
+		<a href="especie.html">Cavalos</a>
+		<a href="especie.html">Roedores</a>
+		<a href="especie.html">Pássaros</a>
+		<a href="especie.html">Peixes</a>
+		<a href="especie.html">Animais Exóticos</a>
+
+</nav>
+<section>
+	<article>
+		<form>
+		<h1>Cadastro de Produto</h1>
+		<fieldset>
+			<h2>Dados do Produto</h2>
+			<label>Nome<br></label>
+				<input type="text" name="nomedoproduto" value="">
+			<br>
+			<label>ID<br></label>
+			<input type="text" name="nomedoproduto" value="">
+			<br>
+			<label>Foto do Produto</label>
+			<input type="file" name="fotoproduto" accept="image/*">
+			<br>
+			<label>Categoria<br></label>
+				<input type="text" name="categoria" value="">
+			<br>
+			<label>Marca<br></label>
+				<input type="text" name="marca" value="">
+			<br>
+			<label>Peso Líquido<br></label>
+				<input type="text" name="pesoproduto" value="">
+			<br>
+			<label>Tipo de Embalagem<br></label>
+				<input type="text" name="tipoembalagem" value="">
+			<br>
+			<label>Dimensões (Altura x Largura x Comprimento)<br></label>
+				<input type="text" name="dimensao" value="">
+			<br>
+			<label>Quantidade<br></label>
+				<input type="text" name="quantidade" value="">
+			<br>
+			<label>Descrição<br></label>
+				<textarea type="text" name="descricao" value=""></textarea>
+			<br>
+			<input type="submit" value="Cadastrar Produto" id="envio">
+		</fieldset>
+		</form>
+	</article>
+</section>
+
+<footer>
+	<p>Eder Rosati Ribeiro | Leonardo de Almeida Lima Zanguetin | Victor Luiz da Silva Mariano Pereira</p>
+</footer>
+
+</body>
+</html>

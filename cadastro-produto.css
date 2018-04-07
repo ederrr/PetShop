@@ -1,0 +1,99 @@
+header, nav {
+	width: 80%;
+	margin: auto;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 5px;
+}
+
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.login-area{
+	font-size: 18pt;
+	padding-right: 50px;
+	padding-top: 50px;
+	position: relative;
+	float: right;
+
+}
+
+.login-area a{
+	font-size: 18px;
+	color: black;
+}
+
+.login-area a:hover{
+	color: green;
+
+}
+.navbar a:hover{
+	background-color: forestgreen;
+}
+
+section {
+	width: 80%;
+	margin: auto;
+	margin-top:10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: auto;
+	padding-bottom: 10px;
+	padding-top: 20px;
+	border-radius: 8px;
+
+}
+
+article {
+	padding-left: 20px;
+	padding-top: 0px;
+
+}
+
+article div p {
+	color: gray;
+	margin: auto;
+
+}
+
+article div p.product {
+	font-weight: bolder;
+}
+
+article h1 {
+	font-size: 18pt;
+}
+
+article h2 {
+	font-size: 16pt;
+}
+
+fieldset {
+	width: 45%;
+	min-height: 600px;
+	display: inline-grid;
+	border: 0px;
+	background-color: rgb(242, 242, 242);
+	margin-bottom: 10px;
+	vertical-align: top;
+}
+
+#envio {
+	margin-right: 0;
+	float: right;
+}
+
+footer {
+	text-align: center;
+	font-size: 14px;
+	color: grey;
+}
