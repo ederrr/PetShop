@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>PetShop</title>
-	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="usuario.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="cadastro-servico.css">
+	<link rel="stylesheet" type="text/css" href="animal.css">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 </head>
 <body>
@@ -40,31 +40,57 @@
 </nav>
 <section>
 	<article>
-		<form>
-		<h1>Cadastro de Serviço</h1>
-		<fieldset>
-			<h2>Dados do Serviço</h2>
-			<label>Nome<br></label>
-				<input type="text" name="nomedoservico" value="">
-			<br>
-			<label>ID<br></label>
-			<input type="text" name="iddoservico" value="">
-			<br>
-			<label>Preço<br></label>
-			<input type="text" name="precoservico" value="">
-			<br>
-			<label>Categoria<br></label>
-				<input type="text" name="categoriaservico" value="">
-			<br>
-			<label>Animais Possíveis<br></label>
-				<input type="text" name="animaispossiveis" placeholder="Ex.: Gato, Cachorro, Coelho" value="">
-			<br>
-			<label>Descrição<br></label>
-				<textarea type="text" name="descricaodoservico" value=""></textarea>
-			<br>
-			<input type="submit" value="Cadastrar Servico" id="envio">
-		</fieldset>
-		</form>
+		<h2>Pet1 Informações</h2>
+		<div class="info">
+			<div class="foto">
+				<img src="fotos/dog.jpg">
+			</div>
+			<div class="descricao">
+				<label>Nome: <p>Pet1</p></label>
+				<label>Idade: <p>3 anos</p></label>
+				<label>Espécie: <p>Cachorro</p></label>
+				<label>Raça: <p>Chihuahua</p></label>
+				<label>Porte: <p>Grande</p></label>
+			</div>
+			<div class="descricao">
+				<label>Sexo: <p>Masculino</p></label>
+				<label>Pelagem: <p>Marron</p></label>
+				<label>RGA: <p>4632.234</p></label>
+				<label>Peso: <p>2,5 KG</p></label>
+			</div>
+		</div>
+		<h2>Serviços Agendados para Pet1</h2>
+		<div class="servicos">
+			<table>
+				<tr>
+					<th>Serviço</th>
+					<th>Data</th>
+					<th>Valor</th>
+				</tr>
+				<tr>
+					<td>Banho </td>
+					<td>16/09/2015</td>
+					<td>R$ 25,00</td>
+				</tr>
+				<tr>
+					<td>Tosa </td>
+					<td>16/09/2015</td>
+					<td>R$ 15,00</td>
+				</tr>
+				<tr>
+					<td>Consulta Veterinária </td>
+					<td>22/11/2017</td>
+					<td>R$ 35,00</td>
+				</tr>
+				<tr>
+					<th>Total </th>
+					<th></td>
+					<th>R$ 75,00</th>
+				</tr>
+			</table>
+		</div>
+
+	
 	</article>
 </section>
 

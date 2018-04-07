@@ -91,7 +91,13 @@ fieldset {
 	margin-right: 0;
 	float: right;
 }
-
+@media all and (-webkit-min-device-pixel-ratio:0){/*chrome e safari*/
+	input, option{
+		width: 100%;
+	}
+	text-area{
+	}
+}
 footer {
 	text-align: center;
 	font-size: 14px;

@@ -48,62 +48,86 @@ section {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding: auto;
 	padding-bottom: 10px;
-	padding-top: 20px;
 	border-radius: 8px;
-
+	padding-top: 20px;
 }
 
-article {
+article{
 	padding-left: 20px;
-	padding-top: 0px;
-
 }
 
-article div p {
+article div p{
 	color: gray;
 	margin: auto;
 
 }
 
-article div p.product {
+article div p.product{
 	font-weight: bolder;
 }
 
-article h1 {
-	font-size: 18pt;
-}
-
-article h2 {
-	font-size: 16pt;
-}
-
-fieldset {
-	width: 46%;
-	min-height: 550px;
-	display: inline-grid;
-	border: 0px;
-	background-color: rgb(242, 242, 242);
-	margin-bottom: 10px;
+.info, .servicos {
 	vertical-align: top;
+	border-style: solid;
+	border-width: 0.8px;
+	border-color: lightgray;
+	margin: 10px;
+	padding: 10px;
+	margin-right: 25px;
+	border-radius: 15px ;
+	min-height: 200px;
+	margin-bottom: 20px;
+}
+
+h2{
+	margin-top: 0;
+	margin-left: 20px;
+}
+
+.foto{
+	width: 20%;
+	margin: auto;
+	display: inline-grid;
+
+}
+.foto img{
+	width: 100%;
+}
+.descricao{
+	width: 30%;
+	margin-top: 40px;
+	margin-left: 20px;
+	display: inline-grid;
+	vertical-align: top;
+}
+
+label{
+	font-weight: bold;
+	font-size: 12pt;
+}
+label p{
+	display: inline-grid;
 
 }
 
-@media all and (-webkit-min-device-pixel-ratio:0){/*chrome e safari*/
-	input, option{
-		width: 100%;
-	}
-	text-area{
-	}
+table{
+	width: 100%;
+	margin-bottom: 10px;
 }
 
-text-area{
-	resize: none;
+td, th{
+	font-size: 14pt;
+	color: black;
+	font-weight: normal;
+	padding: 5px;
 }
 
+th{
+	font-weight: bold;
+}
 
-#envio {
-	margin-right: 0;
-	float: right;
+tr:nth-child(odd) {
+    background-color: #dddddd;
 }
 
 footer {
