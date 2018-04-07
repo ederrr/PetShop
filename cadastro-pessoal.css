@@ -61,7 +61,7 @@ article {
 
 article div p {
 	color: gray;
-	margin: auto; 
+	margin: auto;
 
 }
 
@@ -79,7 +79,7 @@ article h2 {
 
 fieldset {
 	width: 46%;
-	min-height: 600px;
+	min-height: 550px;
 	display: inline-grid;
 	border: 0px;
 	background-color: rgb(242, 242, 242);
