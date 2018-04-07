@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 Eder Rosati Ribeiro				8122585
 Leonardo de Almeida Lima Zanguetin		8531866
 Victor Luiz da Silva Mariano Pereira		8602444
+=======
+Eder Rosati Ribeiro						8122585
+Leonardo de Almeida Lima Zanguetin		8531866
+Victor Luiz da Silva Mariano Pereira	8602444
+>>>>>>> 4b7c5dc7fa3deb15534172d38b082bdfe28fd957
