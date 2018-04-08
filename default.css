@@ -3,6 +3,40 @@ header, nav {
 	margin: auto;
 }
 
+#busca, #logo, .login-area{
+	width: 15%;
+	display: inline;
+}
+
+#logo{
+	margin-left: 20px;
+}
+
+#busca{
+	vertical-align: top;
+	margin-left: 30px;
+	margin-top: 85px;
+	display: inline-flex;
+	width: 50%;
+}
+
+#busca input{
+	display: inline;
+	width: 80%;
+	border-color: green;
+	border-radius: 8px;
+}
+
+#busca button{
+	display: inline;
+	width: 12%;
+	background-color: forestgreen;
+	color: white;
+	font-weight: bold;
+	padding: 1px;
+	border-radius: 3px;
+}
+
 .navbar {
 	overflow: hidden;
 	background-color: #333;
