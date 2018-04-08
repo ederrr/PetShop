@@ -167,16 +167,46 @@ Os arquivos que compõem a página index são: \texttt{index.css}, \texttt{index
 \texttt{index.js}.
 
 \section{Produto}
+A página de produto representa o produto que o usuário está querendo saber mais sobre. Nela
+temos uma foto ampliada do produto e mais algumas miniaturas se caso o produto tiver mais de
+uma foto.
+
+Ao lado da foto, temos o nome do produto, o preço, se caso o produto estiver em promoção, terá
+o preço normal riscado e o preço atual, caso contrário, terá só o preço do produto. Abaixo do
+preço, também tem um botão de compra, um campo para informar o \textsc{cep} para o usuário
+calcular o frete, informando o prazo de entrega e o valor do frete.
+
+Na página do produto ainda tem algumas informações como a descrição do produto, marca, peso,
+tipo de embalagem e dimensões da mesma.
+
+Obs.: A parte de mudar de imagem ao clicar nas miniaturas não funciona por causa da limitação da
+linguagem, poderíamos fazer de uma outra forma, mas optamos por não fazer. No cálculo do frete,
+também não está funcionando, mas isso será consertado na versões posteriores.
 
 Os arquivos que compõem a página produto são: \texttt{produto.css}, \texttt{produto.html} e
 \texttt{produto.js}.
 
 \section{Serviço}
+A página de serviços é composta por todos os serviços oferecidos pelo site, como: banho, tosa,
+consulta veterinária e hospedagem.
+
+Em cada serviço tem o nome do serviço, uma foto ilustrando o serviço, uma breve descrição e um
+botão de agendar, onde o usuário é redirecionado para a página de agendamento de serviço.
 
 Os arquivos que compõem a página serviço são: \texttt{servico.css}, \texttt{servico.html} e
 \texttt{servico.js}.
 
 \section{Usuário}
+Essa página representa como seria a página de um usuário, onde ele tem as informações pessoais
+dele e de seu endereço.
+
+Além das informações pessoais do usuários, também é mostrado todos os animais registrados por
+ele. Nessa parte, o usuário também pode adicionar mais animais se ele quiser.
+
+Por fim, na página de usuário, também há um registro de compras realizadas por ele, contendo
+uma tabela com produto, data, valor de cada produto, e o valor total da compra. E um registro
+de serviços agendados por ele, que contém o tipo de serviço, o animal para que foi registrado
+o serviço, a data do serviço, valor de cada serviço e o valor total de serviços.
 
 Os arquivos que compõem a página usuário são: \texttt{usuario.css}, \texttt{usuario.html} e
 \texttt{usuario.js}.
