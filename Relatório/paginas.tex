@@ -23,18 +23,31 @@ algumas informações em comum. Dentre elas, temos:
 						Se o usuário clicar em um desses animais, ele será
 						redirecionado para a área de produtos para esse tipo de animal.
 	\item [Rodapé]		No rodapé, há o nome completo de todos os integrantes do grupo,
-						podendo ter futuramente um redirecionamento para a página do
-						GitHub de cada um.
+						podendo ter futuramente um redirecionamento ao clicar no nome
+						de cada um para a página do	GitHub do mesmo.
 \end{description}
 
 \section{Administrador}
 Essa página representa como seria a página de um administrador, onde ele tem
 as informações pessoais dele, como se fosse um usuário normal, e seus animais.
+
 Além das informações pessoais do administrador, há sessões de produtos,
-serviços e usuários, nos quais ele pode
+serviços e usuários, nos quais ele pode fazer busca por algum produto (por nome,
+código ou categoria), serviço (por nome, id, categoria) ou usuários (por nome ou
+CPF).
 
+Para cada produto, serviço ou usuário, já criado, é possível editar as informações
+ou excluir. Também é possível que o administrador adicione um novo de qualquer uma
+dessas categorias.
 
-admin.html, admin.css e admn.js
+Por fim, na página de administrador, também há um registro de compras realizadas por
+ele, contendo uma tabela com produto, data, valor de cada produto, e o valor total da
+compra. E um registro de serviços agendados por ele, que contém o tipo de serviço, o
+animal para que foi registrado o serviço, a data do serviço, valor de cada serviço e o
+valor total de serviços.
+
+Os que compõem a página de administrador são: \texttt{admin.html}, \texttt{admin.css} e \texttt{admin.js}
+
 \section{Agendar}
 Contém agendar.html, agendar.js e agendar.css
 \section{Animal}
