@@ -8,8 +8,12 @@ armazenado.
 Como foi utilizado o estilo \emph{Single-Page Application} todas as páginas têm
 algumas informações em comum, dentre elas, temos:
 \begin{description}[style=nextline]
-	\item [Cabeçalho]	O cabeçalho é composto por um logo do petshop, área do
-						usuário, onde ele pode acessar a conta dele, ver os
+	\item [Cabeçalho]	O cabeçalho é composto por um logo do petshop, este linkado
+						com a página inicial, podendo de qualquer lugar do site ir
+						para a página inicial. Também temos, no cabeçalho, uma barra
+						de busca, em que é redirecionado para uma página com os
+						resultados encontrados, no cabeçalho também tem uma área
+						do usuário, onde ele pode acessar a conta dele, ver os
 						agendamentos e o carrinho dele. Além disso, o cabeçalho
 						também tem um menu, que será descrito no próximo tópico.
 	\item [Menu]		O menu é uma forma mais intuitiva de se navegar pelo site,
@@ -72,6 +76,15 @@ com o tipo de serviço, data do serviço, o valor de cada serviço e o valor tot
 esse animal.
 
 Os arquivos que compõem a página animal são: \texttt{animal.css} e \texttt{animal.html}
+
+\section{Busca}
+Nessa página, a página de busca, é mostrado o resultado da pesquisa feita em qualquer página
+do site pela barra de pesquisa.
+
+O resultado, ainda ilustrativo, mostra, em forma de grade, todos os produtos ou serviços
+encontrados pela busca. No caso do que foi implementado, mostra os produtos
+
+Os arquivos que compõem a página de busca são: \texttt{busca.css} e \texttt{busca.html}
 
 \section{Cadastros}
 As páginas de cadastros são separadas em quatro tipos, os quais são: cadastro animal,
@@ -152,7 +165,7 @@ Os arquivos que compõem a página espécie são: \texttt{especie.css} e \texttt
 
 \section{Index}
 O index, nada mais é do que a página inicial do nosso site. Nela temos os itens normais de todas as
-páginas, como dissemos no começo desse capítulo, como cabeçalho, menu, área do usuário.
+páginas, como dissemos no começo desse capítulo, como cabeçalho, campo de busca, menu, área do usuário.
 
 Além dessa área comum, também temos logo a baixo, uma sessão de slides que mostra os destaques como
 serviços ou produtos em promoção, ou alguma ação que o petshop fez e queira divugar na página inicial.
