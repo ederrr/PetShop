@@ -1,0 +1,135 @@
+header, nav {
+	width: 80%;
+	margin: auto;
+}
+#busca, #logo, .login-area{
+	width: 15%;
+	display: inline;
+}
+
+#logo{
+	margin-left: 20px;
+}
+
+#busca{
+	vertical-align: top;
+	margin-left: 30px;
+	margin-top: 85px;
+	display: inline-flex;
+	width: 50%;
+}
+
+#busca input{
+	display: inline;
+	width: 80%;
+	border-color: green;
+	border-radius: 8px;
+}
+
+#busca button{
+	display: inline;
+	width: 12%;
+	background-color: forestgreen;
+	color: white;
+	font-weight: bold;
+	padding: 1px;
+	border-radius: 3px;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 5px;
+}
+
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.login-area{
+	font-size: 18pt;
+	padding-right: 50px;
+	padding-top: 50px;
+	position: relative;
+	float: right;
+
+}
+
+.login-area a{
+	font-size: 18px;
+	color: black;
+}
+
+.login-area a:hover{
+	color: green;
+}
+
+.navbar a:hover{
+	background-color: forestgreen;
+
+}
+
+section {
+	width: 80%;
+	margin: auto;
+	margin-top:10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: auto;
+	padding-bottom: 10px;
+	border-radius: 8px;
+	padding-top: 20px;
+}
+
+article{
+	padding-left: 20px;
+	padding-top: 0px;
+}
+
+article div p{
+	color: gray;
+	margin: auto;
+
+}
+
+article h1 {
+	font-size: 18pt;
+}
+
+article h2 {
+	font-size: 16pt;
+}
+
+div.polaroid {
+	width: 20%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 15px 0 15px 0;
+}
+
+div.polaroid img{
+	width: 100%;
+}
+
+div.container {
+	padding: 10px;
+	display: inline;
+}
+
+div.polaroid:hover{
+	background-color: lightgray;
+}
+
+footer {
+	text-align: center;
+	font-size: 14px;
+	color: grey;
+}

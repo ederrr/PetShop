@@ -13,3 +13,10 @@ function perfilPet() {
 function editUsuario() {
 	window.location.href = "cadastro-pessoal.html";
 }
+function index() {
+	window.location.href = "index.html";
+}
+
+function busca() {
+	window.location.href = "busca.html";
+}

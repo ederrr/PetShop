@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>PetShop</title>
-	<script type="text/javascript" src="especie.js"></script>
+	<script type="text/javascript" src="index.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="especie.css">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -11,11 +11,11 @@
 <body>
 <header>
 	<div id="logo">
-		<img src="img/logo.png">
+		<img src="img/logo.png" onclick="index()">
 	</div>
 	<div id="busca">
 		<input type="text" name="busca">
-		<button>Buscar</button>
+		<button onclick="busca()">Buscar</button>
 	</div>
 	<div class="login-area">
 		<a href="usuario.html"><span class="fa fa-user"></span>Usuário</a> /

@@ -45,3 +45,10 @@ function paginaServico() {
 function editServico() {
 	window.location.href = "cadastro-servico.html";
 }
+
+function index() {
+	window.location.href = "index.html";
+}
+function busca() {
+	window.location.href = "busca.html";
+}
