@@ -62,6 +62,146 @@ article div p{
 
 }
 
+article div p.product{
+	font-weight: bolder;
+}
+
+.info, .busca, .produtos, .servicos{
+	vertical-align: top;
+	border-style: solid;
+	border-width: 0.8px;
+	border-color: lightgray;
+	margin: 10px;
+	padding: 10px;
+	margin-right: 25px;
+	border-radius: 15px ;
+	min-height: 200px;
+	margin-bottom: 20px;
+}
+
+h2{
+	margin-top: 0;
+	margin-left: 20px;
+}
+
+.foto{
+	width: 20%;
+	margin: auto;
+	display: inline-grid;
+
+}
+.foto img{
+	width: 100%;
+}
+
+.descricao, .endereco{
+	width: 30%;
+	margin-top: 40px;
+	margin-left: 20px;
+	display: inline-grid;
+	vertical-align: top;
+}
+
+label{
+	font-weight: bold;
+	font-size: 12pt;
+}
+label p{
+	display: inline-grid;
+
+}
+.busca input {
+	margin-top : 20px;
+	margin-bottom: 10px;
+}
+.fa-edit{
+	float:right;
+	color: blue;
+	margin-right: 25px;
+}
+.fa-plus{
+	float: right;
+	color: forestgreen;
+	margin-right: 30px;
+}
+
+.fa-trash{
+	color: tomato;
+	margin-left: 10%;
+}
+
+.lista span, p{
+	margin-top: 10px;
+	display: inline-grid;
+}
+
+.lista .fa-edit{
+	float: none;
+	color: blue;
+	margin-right: 10%;
+}
+
+
+div.polaroid {
+	width: 20%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 15px 0 15px 0;
+}
+
+div.polaroid img{
+	width: 100%;
+}
+
+div.container {
+	padding: 10px;
+	display: inline;
+}
+
+div.polaroid:hover{
+	background-color: lightgray;
+}
+
+.pets .polaroid{
+	width: 12%;
+	min-height: 180px;
+	margin-bottom: 25px;
+}
+
+.pets  p{
+	display: inline;
+}
+
+.pets .fa-edit{
+	float: left;
+}
+.pets .fa-trash{
+	float: right;
+}
+
+table{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+td, th{
+	font-size: 14pt;
+	color: black;
+	font-weight: normal;
+	padding: 5px;
+}
+
+th{
+	font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
 footer {
 	text-align: center;
 	font-size: 14px;

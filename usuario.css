@@ -66,7 +66,7 @@ article div p.product{
 	font-weight: bolder;
 }
 
-.info{
+.info, .produtos, .servicos{
 	vertical-align: top;
 	border-style: solid;
 	border-width: 0.8px;
@@ -119,6 +119,7 @@ div.pet {
 	margin: 10px;
 	padding: 10px;
 	border-radius: 15px 0 15px 0;
+	margin-bottom: 30px;
 }
 
 div.pet img{
@@ -145,12 +146,33 @@ div.pet:hover{
 	color: tomato;
 }
 
+.info .fa-edit{
+	float: right;
+}
+
+table{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+td, th{
+	font-size: 14pt;
+	color: black;
+	font-weight: normal;
+	padding: 5px;
+}
+
+th{
+	font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
 footer {
 	text-align: center;
 	font-size: 14px;
 	color: grey;
 }
 
-.info .fa-edit{
-	float: right;
-}

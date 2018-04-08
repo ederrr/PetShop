@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>PetShop</title>
-	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="admin.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="admin.css">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 </head>
 <body>
@@ -15,7 +15,7 @@
 			<img src="img/logo.png">
 		</span>
 		<span class="login-area">
-			<a href="usuario.html"><span class="fa fa-user"></span>Administrador</a> /
+			<a href="admin.html"><span class="fa fa-user"></span>Administrador</a> /
 					<a href="#logout">Sair</a>
 					<div>
 						<a href="carrinho.html"><span class="fa fa-shopping-cart"></span>Carrinho</a>
@@ -38,7 +38,247 @@
 </nav>
 <section>
 	<article>
+		<h2>Minhas Informações</h2>
+		<div class="info">
+			<div class="foto">
+				<img src="fotos/user.png">
+			</div>
+			<div class="descricao">
+				<label>Nome: <p>Administrador1</p></label>
+				<label>Email: <p>administrador@email.com</p></label>
+				<label>CPF: <p>334.223.452-23</p></label>
+				<label>Data de Nacimento: <p>25/04/1992</p></label>
+				<label>Sexo: <p>Masculino</p></label>
+				<label>Telefone: <p>(16) 3301-0101</p></label>
 
+			</div>
+			<div class="endereco">
+				<label>Rua: <p>Joaquim José João da Silva</p></label>
+				<label>Número: <p>1234</p></label>
+				<label>Bairro: <p>Centro</p></label>
+				<label>Cidade: <p>São Carlos</p></label>
+				<label>Estado: <p>São Paulo</p></label>
+
+			</div>
+			<span class="fa fa-edit" onclick="editUsuario()"></span>
+		</div>
+
+
+		<h2>Meus pets</h2>
+		<div class="pets">
+			<div class="polaroid">
+				<img src="fotos/dog.jpg" onclick="perfilPet()">
+				<div class="container">
+					<p class="product"><span class="fa fa-edit" onclick="editPet()"></span>Pet 1<span class="fa fa-trash"></span></p>
+				</div>
+			</div>
+			<div class="polaroid">
+				<img src="fotos/dog.jpg" onclick="perfilPet()">
+				<div class="container">
+					<p class="product"><span class="fa fa-edit" onclick="editPet()"></span>Pet 2<span class="fa fa-trash"></span></p>
+				</div>
+			</div>
+			<div class="polaroid">
+				<img src="fotos/dog.jpg" onclick="perfilPet()">
+				<div class="container">
+					<p class="product"><span class="fa fa-edit" onclick="editPet()"></span>Pet 3<span class="fa fa-trash"></span></p>
+				</div>
+			</div>
+			<div class="polaroid">
+				<img src="fotos/dog.jpg" onclick="perfilPet()">
+				<div class="container">
+					<p class="product"><span class="fa fa-edit" onclick="editPet()"></span>Pet 4<span class="fa fa-trash"></span></p>
+				</div>
+			</div>
+			<div class="polaroid" onclick="novoPet()">
+				<img src="fotos/plus.png" >
+				<div class="container">
+					<p class="product">Adicionar Pet</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<h2>Buscar Produtos</h2>
+		<div class="busca">
+			<span class="fa fa-plus" onclick="novoProduto()"></span>
+			<input type="text" name="produto"> 
+			<select name="tipo-busca-produto">
+				<option value="nome">Nome</option>
+				<option value="codigo">Código</option>
+				<option value="categoria">Categoria</option>
+			</select>
+			<button>Buscar</button>
+			<div class="lista">
+				<div class="polaroid" ">
+					<img src="fotos/dog.jpg" onclick="paginaProduto()" >
+					<div class="container">
+						<span class="fa fa-edit" onclick="editProduto()"></span>
+						<p class="product">Dog 1</p>
+						<span class="fa fa-trash" ></span>
+						<br>
+						<p class="price">Dinheiros $$</p>
+					</div>
+				</div>
+				<div class="polaroid" >
+					<img src="fotos/dog.jpg" onclick="paginaProduto()" >
+					<div class="container">
+						<span class="fa fa-edit" onclick="editProduto()"></span>
+						<p class="product">Dog 1</p>
+						<span class="fa fa-trash" ></span>
+						<br>
+						<p class="price">Dinheiros $$</p>
+					</div>
+				</div>
+				<div class="polaroid" >
+					<img src="fotos/dog.jpg" onclick="paginaProduto()">
+					<div class="container">
+						<span class="fa fa-edit" onclick="editProduto()"></span>
+						<p class="product">Dog 1</p>
+						<span class="fa fa-trash" ></span>
+						<br>
+						<p class="price">Dinheiros $$</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<h2>Buscar Serviços</h2>
+		<div class="busca">
+			<span class="fa fa-plus" onclick="novoServico()"></span>
+			<input type="text" name="servico"> 
+			<select name="tipo-busca-servico">
+				<option value="nome">Nome</option>
+				<option value="id">ID</option>
+				<option value="categoria">Categoria</option>
+			</select>
+			<button>Buscar</button>
+			<div class="lista">
+				<div class="polaroid" >
+					<img src="fotos/banho.png" onclick="paginaServico()">
+					<div class="container">
+						<span class="fa fa-edit" onclick="editServico()"></span>
+						<p class="product">Banho</p>
+						<span class="fa fa-trash" ></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2>Buscar Usuários</h2>
+		<div class="busca">
+			<span class="fa fa-plus" onclick="novoUsuario()"></span>
+			<input type="text" name="usuario"> 
+			<select name="tipo-busca-usuario">
+				<option value="nome">Nome</option>
+				<option value="cpf">CPF</option>
+			</select>
+			<button>Buscar</button>
+			<div class="lista">
+				<div class="polaroid" >
+					<img src="fotos/user.png" onclick="paginaUsuario()">
+					<div class="container">
+						<span class="fa fa-edit" onclick="editUsuario()"></span>
+						<p class="product">Usuario1</p>
+						<span class="fa fa-trash" ></span>
+						<br>
+						<p>475.390.345-43</p>
+						<button .class="tornar-admin">Tornar Admin</button>
+					</div>
+				</div>
+				<div class="polaroid" >
+					<img src="fotos/user.png" onclick="paginaUsuario()" >
+					<div class="container">
+						<span class="fa fa-edit" onclick="editUsuario()"></span>
+						<p class="product">Usuario1</p>
+						<span class="fa fa-trash" ></span>
+						<br>
+						<p>225.220.345-43</p>
+						<button .class="tornar-admin">Tornar Admin</button>
+					</div>
+				</div>
+				<div class="polaroid" >
+					<img src="fotos/user.png" onclick="paginaUsuario()" >
+					<div class="container">
+						<span class="fa fa-edit" onclick="editUsuario()"></span>
+						<p class="product">Administrador1</p>
+						<span class="fa fa-trash" ></span>
+						<br>
+						<p>373.390.345-43</p>
+						<button .class="tornar-admin">Tornar Usuário</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2>Compras Realizadas</h2>
+		<div class="produtos">
+			<table>
+				<tr>
+					<th>Produtos</th>
+					<th>Data</th>
+					<th>Valor</th>
+				</tr>
+				<tr>
+					<td>Produto 1 </td>
+					<td>16/09/2015</td>
+					<td>R$ 25,00</td>
+				</tr>
+				<tr>
+					<td>Produto 2 </td>
+					<td>16/09/2015</td>
+					<td>R$ 15,00</td>
+				</tr>
+				<tr>
+					<td>Produto 3 </td>
+					<td>22/11/2017</td>
+					<td>R$ 35,00</td>
+				</tr>
+				<tr>
+					<th>Total </th>
+					<th></th>
+					<th>R$ 75,00</th>
+				</tr>
+			</table>
+		</div>
+
+		<h2>Serviços Agendados</h2>
+		<div class="servicos">
+			<table>
+				<tr>
+					<th>Serviço</th>
+					<th>Pet</th>
+					<th>Data</th>
+					<th>Valor</th>
+				</tr>
+				<tr>
+					<td>Banho </td>
+					<td>Pet1</td>
+					<td>16/09/2015</td>
+					<td>R$ 25,00</td>
+				</tr>
+				<tr>
+					<td>Tosa </td>
+					<td>Pet1</td>
+					<td>16/09/2015</td>
+					<td>R$ 15,00</td>
+				</tr>
+				<tr>
+					<td>Consulta Veterinária </td>
+					<td>Pet1</td>
+					<td>22/11/2017</td>
+					<td>R$ 35,00</td>
+				</tr>
+				<tr>
+					<th>Total </th>
+					<th></th>
+					<th></th>
+					<th>R$ 75,00</th>
+				</tr>
+			</table>
+		</div>
 	</article>
 
 </section>
