@@ -34,7 +34,7 @@ as informações pessoais dele, como se fosse um usuário normal, e seus animais
 Além das informações pessoais do administrador, há sessões de produtos,
 serviços e usuários, nos quais ele pode fazer busca por algum produto (por nome,
 código ou categoria), serviço (por nome, id, categoria) ou usuários (por nome ou
-CPF).
+\textsc{cpf}).
 
 Para cada produto, serviço ou usuário, já criado, é possível editar as informações
 ou excluir. Também é possível que o administrador adicione um novo de qualquer uma
@@ -73,9 +73,18 @@ esse animal.
 
 Os arquivos que compõem a página animal são: \texttt{animal.css} e \texttt{animal.html}
 
-\section{Cadastro Animal}
-A página de cadastro animal consiste de um formulário, onde o usuário pode cadastrar o seu
-animal de estimação, preenchendo as informações e clicando no botão para o cadastro.
+\section{Cadastros}
+As páginas de cadastros são separadas em quatro tipos, os quais são: cadastro animal,
+cadastro pessoal, cadastro de produto e cadastro de serviço.
+
+Essas páginas são compostas por formulários, onde o usuário ou o administrador pode preencher
+para poder cadastrar o que quer e um botão para enviar o conteúdo do formulário. Obviamente
+que cadastro de produtos e cadastro de serviços são páginas exclusivas de administrador.
+
+\subsection{Cadastro Animal}
+A página de cadastro animal, como fora dito anteriormente, consiste de um formulário,
+onde o usuário pode cadastrar o seu animal de estimação, preenchendo as informações e
+clicando no botão para o cadastro.
 
 Nesse formulário há a possibilidade do usuário preencher com nome, foto do animal, sexo,
 tipo do animal, raça, pelagem ou cor, \textsc{rga}, porte, data de nascimento e peso.
@@ -83,36 +92,121 @@ tipo do animal, raça, pelagem ou cor, \textsc{rga}, porte, data de nascimento e
 Os arquivos que compõem a página cadastro animal são: \texttt{cadastro-animal.css} e
 \texttt{cadçastro-animal.html}.
 
-\section{Cadastro Pessoal}
+\subsection{Cadastro Pessoal}
+Para o cadastro pessoal, temos uma página com um formulário, como a de todos os tipos
+de cadastro no site, mas tendo apenas informações pessoais.
+
+Para melhor estruturação semântica, o formulário é dividido em duas partes, uma para
+informações própria do usuário, como: nome, e-mail, senha de acesso, \textsc{cpf},
+data de nascimento, sexo, foto e telefone. E outra parte com informações do endereço
+do mesmo, como: endereço, número, \textsc{cep}, complemento, bairro, cidade, estado
+e um campo para a descrição de um ponto de referência, para ficar melhor para quem for
+prestar o serviço de entrega ou “leva-e-trás”.
+
 Os arquivos que compõem a página cadastro pessoal são: \texttt{cadastro-pessoal.css} e
 \texttt{cadastro-pessoal.html}.
 
-\section{Cadastro de Produto}
+\subsection{Cadastro de Produto}
+No cadastro do produto, como foi explicado anteriormente, é uma página que só o administrador
+tem acesso. Nela o administrador pode preencher um formulário para adicionar um produto no
+banco de dados.
+
+O formulário é composto pelas seguintes informações: nome, id, preço, foto, categoria, marca,
+peso líquido, tipo de embalagem, dimensões da embalagem, quantidade e uma área para descrição
+do produto.
+
 Os arquivos que compõem a página cadastro de produto são: \texttt{cadastro-produto.css} e
 \texttt{cadastro-produto.html}.
 
-\section{Cadastro de Serviço}
+\subsection{Cadastro de Serviço}
+Para o cadastro de serviço, o administrador terá um formulário para preencher com as seguintes
+informações: nome, id, preço, categoria, animais possíveis (essa área é para ter controle de um
+usuário tentar agendar um serviço de tosa em uma iguana) e um local para uma breve descrição
+do serviço.
+
+Lembrando que essa página terá acesso reestrito, somente o administrador que poderá acessá-la.
+
 Os arquivos que compõem a página cadastro de serviço são: \texttt{cadastro-servico.css} e
 \texttt{cadastro-servico.html}.
 
 \section{Carrinho}
+A página carrinho é composta por todos os produtos que o usuário clicou em comprar. Nela temos
+uma visão enxuta do produto, com a foto do produto, o valor dele e quantidade desejada.
+
+A quantidade pode ser alterada pelo usuário, assim como o próprio produto, podendo excluí-lo se
+desejar. Ao finalizar a compra, o usuário tem que clicar em fechar carrinho para concluir a compra.
+
+Obs.: Ainda não foi implementada a parte final para a confirmação da compra com o pagamento.
+
 Os arquivos que compõem a página carrinho são: \texttt{carrinho.css} e \texttt{carrinho.html}.
 
 \section{Espécie}
+A página de espécie é composta por todos os produtos para aquele tipo de animal. Cada produto é
+composto por uma foto do produto, o nome do produto e o preço dele.
+
+Se clicarmos em algum produto, ele será redirecionado à página do produto que clicamos. Vale lembrar
+que no site que fizemos temos imagens, produtos, valores tudo meramente ilustrativo, pois o
+objetivo é mostrar como o site funcionaria e o \emph{layout} dele.
+
 Os arquivos que compõem a página espécie são: \texttt{especie.css} e \texttt{especie.html}.
 
 \section{Index}
+O index, nada mais é do que a página inicial do nosso site. Nela temos os itens normais de todas as
+páginas, como dissemos no começo desse capítulo, como cabeçalho, menu, área do usuário.
+
+Além dessa área comum, também temos logo a baixo, uma sessão de slides que mostra os destaques como
+serviços ou produtos em promoção, ou alguma ação que o petshop fez e queira divugar na página inicial.
+Ainda não está funcionando automaticamente a parte de slides, mas basta clicar nos quadradinhos que a
+imagem muda.
+
+Em seguida, temos os produtos em destaque de cada tipo de animal em forma de grade, contendo a foto,
+o nome do produto e o valor dele. Para uma próxima etapa, podemos fazer essa parte de produtos em
+destaque de acordo com os animais que o usuário tem e os produtos que ele mais consome.
+
 Os arquivos que compõem a página index são: \texttt{index.css}, \texttt{index.html} e
 \texttt{index.js}.
 
 \section{Produto}
+A página de produto representa o produto que o usuário está querendo saber mais sobre. Nela
+temos uma foto ampliada do produto e mais algumas miniaturas se caso o produto tiver mais de
+uma foto.
+
+Ao lado da foto, temos o nome do produto, o preço, se caso o produto estiver em promoção, terá
+o preço normal riscado e o preço atual, caso contrário, terá só o preço do produto. Abaixo do
+preço, também tem um botão de compra, um campo para informar o \textsc{cep} para o usuário
+calcular o frete, informando o prazo de entrega e o valor do frete.
+
+Na página do produto ainda tem algumas informações como a descrição do produto, marca, peso,
+tipo de embalagem e dimensões da mesma.
+
+Obs.: A parte de mudar de imagem ao clicar nas miniaturas não funciona por causa da limitação da
+linguagem, poderíamos fazer de uma outra forma, mas optamos por não fazer. No cálculo do frete,
+também não está funcionando, mas isso será consertado na versões posteriores.
+
 Os arquivos que compõem a página produto são: \texttt{produto.css}, \texttt{produto.html} e
 \texttt{produto.js}.
 
 \section{Serviço}
+A página de serviços é composta por todos os serviços oferecidos pelo site, como: banho, tosa,
+consulta veterinária e hospedagem.
+
+Em cada serviço tem o nome do serviço, uma foto ilustrando o serviço, uma breve descrição e um
+botão de agendar, onde o usuário é redirecionado para a página de agendamento de serviço.
+
 Os arquivos que compõem a página serviço são: \texttt{servico.css}, \texttt{servico.html} e
 \texttt{servico.js}.
 
 \section{Usuário}
+Essa página representa como seria a página de um usuário, onde ele tem as informações pessoais
+dele e de seu endereço.
+
+Além das informações pessoais do usuários, também é mostrado todos os animais registrados por
+ele. Nessa parte, o usuário também pode adicionar mais animais se ele quiser.
+
+Por fim, na página de usuário, também há um registro de compras realizadas por ele, contendo
+uma tabela com produto, data, valor de cada produto, e o valor total da compra. E um registro
+de serviços agendados por ele, que contém o tipo de serviço, o animal para que foi registrado
+o serviço, a data do serviço, valor de cada serviço e o valor total de serviços.
+
 Os arquivos que compõem a página usuário são: \texttt{usuario.css}, \texttt{usuario.html} e
 \texttt{usuario.js}.
