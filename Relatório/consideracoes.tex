@@ -1,1 +1,17 @@
 \chapter{Considerações finais}
+Algumas considerações devem ser feitas a respeito do funcionamento do \emph{mockup} para que nenhum equívoco de visão possa sua afetar a avaliação.
+\begin{enumerate}
+	\item Arquivos \texttt{.js} são utilizados apenas para tornar o \emph{mockup} o mais funcional possível, realizando a troca de página através dos elementos do \texttt{.html}. Nenhum \emph{framework} foi utilizado para a confecção dos arquivos javascript e nenhuma funcionalidade que não seja troca de página foi implementada.
+
+	\item Para tornar o \emph{mockup} ainda mais visual, criamos todos os tipos de elementos (produtos, serviços, \emph{pets}\ldots) e a forma que eles serão dispostos no \emph{site} são apresentados através de repetição de itens. Apesar de fictícios, os itens são semi-funcionais e direcionam para as páginas seguintes, simulando compras, busca e outras funcionalidades.
+
+	\item O administrador nesse sistema é capaz de adicionar, remover e editar qualquer produto, serviço e usuário. Um ponto que deve ser destacado é que um usuário comum podem ser elevados a administrador, e administradores podem ser rebaixados a usuários. Dessa funcionalidade dois fatos importantes devem ser destacados: sempre existirá um administrador no sistema, pois precisa de um administrador para remover outro; e um administrador nada mais é que um cliente com privilégios, ou seja, um administrador possui todas as funcionalidades de um cliente, portanto ele necessita armazenar seus históricos de compra.
+
+	\item Foram utilizados os ícones “\emph{edit}”, “\emph{trash}”, “\emph{user}”, “\emph{plus}” e “\emph{calendar}” disponíveis para uso no \emph{site} \href{https://fontawesome.com/}{Font Awesome}, por esse motivo incluímos um \emph{link} para essa página em nossos cabeçalhos, nenhuma outra funcionalidade extra foi utilizada.
+
+	\item Abrindo a página \texttt{index.html} é possível navegar por todas as funcionalidades do Usuário do sistema, a única que diferencia Administrador de Usuário é o perfil. Para acessar o perfil de Cliente é só clickar no \emph{link} “Usuário” disposto no canto superior direito de todas as páginas. No caso do perfil do Administrador seria necessário estar logado como um para acessar, como isso se torna impossível devido ao \emph{login} não estar implementado, esta página pode ser acessada no projeto e possui o nome \texttt{admin.html}.
+
+	\item O canto superior direito de todas as páginas mostra um cliente já logado, caso ele não estivesse logado, os campos para inserção de \emph{login} e senha e um \emph{link} para se cadastrar seriam apresentados no mesmo local. Isso não foi demonstrado no \emph{mockup} pois temos a visão sempre do Usuário logado que é a mais importante. Em caso de tentativa de compra sem \emph{login}, um foco seria dado na região com o aviso de necessidade de \emph{login} para prosseguir. Nesse caso, nosso \emph{site} não possui uma página de \emph{login}, pois tudo é redirecionado para a área de \emph{login} que está presente em todas as páginas.
+
+	\item Todo o \emph{site} foi testado em notebooks com resolução \(1366\times768\), no Windows através dos navegadores Google Chrome e Mozilla Firefox, e no Linux utilizando o Mozilla Firefox.
+\end{enumerate}
